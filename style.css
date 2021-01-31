@@ -147,3 +147,8 @@ iframe {
     height: calc(100vw/1.77);
 
 }
+
+.text-primary-dark {
+
+    color: #016aaf;
+}
