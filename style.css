@@ -131,14 +131,14 @@ p>a:focus {
 
 .footer-sgv {
 
-    color: #495EC7
+    color: #016aaf;
 
 }
 
 .footer-sgv:hover {
 
     transition-duration: 300ms;
-    color: #1E2A5E
+    color: #1E2A5E;
 }
 
 iframe {
