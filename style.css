@@ -1,0 +1,149 @@
+body {
+    background-color: #fff;
+    color: #4a5568;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 200;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.text-muted {
+    color: #6E777C;
+}
+
+.-mt-full {
+    margin-top: -100%;
+}
+
+.center-y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (min-width:1024px) {
+    .lg\:mt-0 {
+        margin-top: 0;
+    }
+    .lg\:top-20vh {
+        top: 20vh;
+    }
+    .lg\:center-y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .lg\:center-x {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .lg\:shadow-right {
+        box-shadow: 0 0 15px -2px rgba(0, 0, 0, .2), 5px 0 6px -2px rgba(0, 0, 0, .05);
+    }
+}
+
+.svg-icon {
+    display: inline;
+    fill: currentColor;
+    pointer-events: none;
+}
+
+.svg-icon.md {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.svg-icon.sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+p>a {
+    border-bottom: 1px dotted #016AAF;
+    transition-duration: 300ms;
+    color: #016AAF;
+}
+
+p>a:hover,
+p>a:focus {
+    border-bottom-style: solid;
+    color: #016AAF;
+    opacity: 0.5;
+}
+
+#nav {
+    height: 0rem;
+    overflow: hidden;
+    z-index: 40;
+    transform: translate3d(0, 0, 0);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@media (min-width:1024px) {
+
+    #nav {
+
+        height: 3rem;
+    }
+
+ }
+
+#nav>a {
+    line-height: 3rem;
+}
+
+@media (max-width:639px)
+/* ,(min-width: 1023px) and (max-width: 1279px)  */
+{
+    #event-date-location {
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-top: 3rem;
+        text-align: center;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        padding: 0.5rem 0;
+        border-top-width: 1px;
+    }
+    #nav {
+        border-top: 0;
+    }
+    #main>.hero-img>.top-bg {
+        height: calc(25vh + 1.75rem) !important;
+    }
+    #main>.hero-img>.placeholder {
+        height: calc(25vh - 6rem + 1.75rem) !important;
+    }
+    .home-hero-img {
+        padding-top: 3.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #nav {
+        top: 3.5rem;
+    }
+}
+
+.footer-sgv {
+
+    color: #495EC7
+
+}
+
+.footer-sgv:hover {
+
+    transition-duration: 300ms;
+    color: #1E2A5E
+}
+
+iframe {
+
+    width: 100vw;
+    height: calc(100vw/1.77);
+
+}

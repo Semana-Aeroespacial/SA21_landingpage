@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Semana Aeroespacial 2021</title>
+
+        <link rel="shortcut icon" type="image/png"="/img/logos/favicon.png">
+
+        <meta property="og:image" content="/img/logos/logo.png" />
+        <meta property="og:locale" content="pt-pt" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Livvic:400,600" rel="stylesheet">
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet">
+        <meta name="author" content="AeroTéc">
+
+        <style>
+            @media (max-width: 1023px) {
+                #nav.visible {
+                    opacity: 1;
+                    height: <?=1 * 3 ?>rem;
+                }
+            }
+        </style>
+        
+         <script>
+            window.onload = function(){
+                document.getElementById('toggle-nav').addEventListener('click', function(e){
+                    document.getElementById('nav').classList.toggle('visible');
+                });
+            }
+        </script>
+
+<body>
+    <nav class="relative sticky top-0 z-50 w-full mt-0 text-xs text-gray-800 bg-white lg:mt-8 lg:shadow-md">
+        <div class="flex items-center justify-between mx-4 h-14">
+    
+            <div class="static z-50 flex items-center">
+                <a target="_blank" href="https://aerotec.pt">
+                    <img src="/img/logos/logoaerotecs_compressed.png" alt="Aerotec" class="block h-5 mx-auto my-4 lg:h-7 lg:my-0" />
+                </a>
+                <a href="/" class="flex items-center h-8 pl-2 mt-1 ml-3 text-base border-l border-gray-500">
+                    <img src="/img/logos/logo.png" alt="Semana Aeroespacial" class="h-10 lg:h-12" />
+                </a>
+    
+                <a class="ml-4 leading-tight bg-white" href="" id="event-date-location">
+                    <span class="block font-semibold xl:text-xs">1 a 4 de março @Técnico</span>
+                    <span class="text-xs">Online</span>
+                </a>
+            </div>
+    
+            <button type="button" class="z-50 flex items-center h-8 px-2 text-xs tracking-wide text-gray-800 uppercase bg-white border rounded-md font-semiextrabold lg:hidden" id="toggle-nav">
+            Menu
+                <i class="ml-1 fa fa-bars"></i>
+            </button>
+    
+            <div class="absolute top-0 left-0 w-full mt-12 tracking-wider text-center uppercase transition-all duration-300 bg-white shadow-lg opacity-0 font-semiextrabold lg:transition-none lg:w-auto lg:flex lg:text-left lg:shadow-none lg:opacity-100 lg:relative lg:mt-0 xl:border-t-0" id="nav">
+    
+                <a href="#video" class="items-center block w-full h-12 text-sm transition-colors duration-300 lg:h-full lg:px-4 lg:flex lg:py-0 hover:text-primary-light">SA20 </a>
+    
+            
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative hero-img home-hero-img" style="min-height: calc(100vh - 4rem - 2rem)">
+
+        <div style="background-image: url('/img/home_bg/aerotec_flyers.jpg'); height: 100%;" class="fixed top-0 left-0 z-10 w-full bg-blue-400 bg-center bg-cover"></div>
+        
+            <div class="relative z-20 w-full py-8 lg:-translate-y-1/2 lg:absolute lg:transform lg:p-0 lg:top-1/2">
+                <div class="w-full">
+                    <div class="w-full py-5 mx-auto text-center shadow-md lg:shadow-xl x-mt-full" style="background-color: rgb(255, 255, 255, 0.9);">
+        
+                        <div class="container">
+                            <img src="/img/logos/logo.png" alt="Semana Aeroespacial'" class="mx-auto opacity-100 h-36" />
+        
+                            <div class="-mt-4 hr-primary"></div>
+        
+                            <p class="font-normal text-muted">A Semana Aeroespacial é um evento organizado pelo <a href="https://aerotec.pt" target="_blank">AeroTéc</a> que permite aos alunos do <a href="https://tecnico.ulisboa.pt/" target="_blank">IST</a> contactar com as empresas
+                            do setor Aeronáutico/Aeroespacial.</p>
+        
+                            <a href="https://awa.pt"><img src="/img/empresas/awa.png" alt="AWA" class="h-20 mx-auto mt-4 rounded" /></a>
+                        </div>
+        
+                    </div>
+        
+                  
+        
+        
+                </div>
+            </div>
+        </div>
+
+
+        <div id="video" class="relative z-20 h-auto py-10 mx-auto bg-white">
+        
+            <div class="hidden md:flex">
+          
+              <iframe width="100%" height="1000px" src="https://www.youtube.com/embed/26dAlIzO6p4?loop=1&autoplay=1&modestbranding=1&fs=0&playsinline=1&rel=0&showinfo=0&controls=1&mute=1" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" autoplay="1" allowfullscreen></iframe>
+          
+            </div>
+         
+            <div class="flex md:hidden">
+          
+              <iframe src="https://www.youtube.com/embed/26dAlIzO6p4?loop=1&autoplay=0&modestbranding=1&fs=0&playsinline=1&rel=0&showinfo=0&controls=1" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" autoplay="1" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+
+
+          <footer class="relative z-20 bg-white">
+            <div class="w-full mx-auto text-center bg-white text-bluetext">
+                <div class="pt-20 text-xl font-semibold leading-tight lg:text-2xl">Contactos</div>
+                <div class="hr-primary"></div>
+                <div>Pode entrar em contacto connosco através de:</div>
+        
+                <div class="mt-6 text-center text-bluetext md:flex md:w-4/5 lg:w-3/5 md:mx-auto">
+                    <div class="mb-1 md:w-1/5 lg:mb-0 lg:pr-6">
+                        <a href="https://www.facebook.com/AeroTecnico/?ref=br_rs"
+                            class="block h-full px-8 py-0 transition-colors duration-300 bg-white ">
+        
+                            <i class="mx-auto fab fa-facebook-square fa-3x sr-contact footer-sgv"></i>
+        
+                            <p class="block mx-auto leading-tight lg:w-4/5">Facebook</p>
+                        </a>
+                    </div>
+        
+                    <div class="mb-1 md:w-1/5 lg:mb-0 lg:pr-6">
+                        <a href="https://www.instagram.com/aero.tec/"
+                            class="block h-full px-8 py-0 transition-colors duration-300 bg-white ">
+        
+                            <i class="mx-auto fab fa-instagram fa-3x sr-contact footer-sgv"></i>
+        
+                            <p class="block mx-auto leading-tight lg:w-4/5">Instagram</p>
+                        </a>
+                    </div>
+        
+                    <div class="mb-1 md:w-1/5 lg:mb-0 lg:pr-6">
+                        <a href="mailto:semana.aeroespacial@aerotec.tecnico.ulisboa.pt"
+                            class="block h-full px-8 py-0 transition-colors duration-300 bg-white ">
+        
+                            <i class="mx-auto fas fa-at fa-3x sr-contact footer-sgv"></i>
+        
+                            <p class="block mx-auto leading-tight lg:w-4/5">Email</p>
+                        </a>
+                    </div>
+        
+                    <div class="mb-1 md:w-1/5 lg:mb-0 lg:pr-6">
+                        <a href="https://www.linkedin.com/company/aerot%C3%A9c/"
+                            class="block h-full px-8 py-0 transition-colors duration-300 bg-white ">
+        
+                            <i class="mx-auto fab fa-linkedin fa-3x sr-contact footer-sgv"></i>
+        
+                            <p class="block mx-auto leading-tight lg:w-4/5">LinkedIn</p>
+                        </a>
+                    </div>
+        
+                    <div class="mb-1 md:w-1/5 lg:mb-0 lg:pr-6">
+                        <a href="https://www.youtube.com/channel/UCrTrDSNaMf44AtJlgar5Agw"
+                            class="block h-full px-8 py-0 transition-colors duration-300 bg-white ">
+        
+                            <i class="mx-auto fab fa-youtube fa-3x sr-contact footer-sgv"></i>
+        
+                            <p class="block mx-auto leading-tight lg:w-4/5">YouTube</p>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="items-stretch p-10 md:flex md:w-10/12 lg:w-4/5 md:mx-auto">
+                    <div class="h-full md:w-1/3 lg:mb-0 lg:pr-6">
+                        <a 
+                            class="h-auto px-8 py-0 bg-white ">
+                            
+                            <img src="img/logos/tecnico.png" alt="{{ 'Instituto Superior Técnico' }}" class="h-20 mx-auto mt-4" />
+        
+                        </a>
+                    </div>
+        
+                    <div class="h-full md:w-1/3 lg:mb-0 lg:pr-6">
+                        <a 
+                            class="h-full px-8 py-0 bg-white ">
+                            
+                            <img src="img/logos/logoaerotecs.png" alt="{{ 'AeroTéc' }}" class="mx-auto mt-4 h-30 sm:h-20 md:h-auto xl:h-24" />
+        
+                        </a>
+                    </div>
+        
+                    <div class="h-full md:w-1/3 lg:mb-0 lg:pr-6">
+                        <a 
+                            class="h-full px-8 py-0 bg-white ">
+                            
+                            <img src="img/logos/ASLisboa.jpeg" alt="{{ 'EUROAVIA' }}" class="h-20 mx-auto mt-4" />
+        
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </footer>
+        
+        
+
+</body>
